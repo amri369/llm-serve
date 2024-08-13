@@ -32,7 +32,7 @@ The AWS CLI is a unified tool to manage AWS services from the command line. Foll
     aws --version
    
 ### b. kubectl
-kubectl is the command-line tool used to interact with Kubernetes clusters. Follow these steps to install it on macOS:
+kubectl is the command-line tool used to interact with Kubernetes clusters. [Follow these steps](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/) to install it on macOS:
 
 1. **Download the Latest Release:**
 Use the following command to download the latest stable version of kubectl:
@@ -56,8 +56,3 @@ To verify the installation, type
 
     ```bash
     kubectl version --client --output=yaml
-
-
-
-
-
