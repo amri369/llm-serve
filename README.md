@@ -22,5 +22,41 @@ The AWS CLI is a unified tool to manage AWS services from the command line. Foll
    brew update
 
 2. **Install AWS CLI:**
+
     ```bash
     brew install awscli
+   
+3. **Verify AWS CLI installation:**
+
+    ```bash
+    aws --version
+   
+### b. kubectl
+kubectl is the command-line tool used to interact with Kubernetes clusters. Follow these steps to install it on macOS:
+
+1. **Download the Latest Release:**
+Use the following command to download the latest stable version of kubectl:
+    ```bash
+    curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/amd64/kubectl"
+
+2. **Make the Binary Executable:**
+Modify the file permissions to make the kubectl binary executable:
+
+    ```bash
+    chmod +x ./kubectl
+   
+3. **Move the Binary to a System Path and change ownership:**
+
+    ```bash
+    sudo mv ./kubectl /usr/local/bin/kubectl
+    sudo chown root: /usr/local/bin/kubectl
+
+To verify the installation, type:
+
+    ```bash
+    kubectl version --client --output=yaml
+
+
+
+
+
