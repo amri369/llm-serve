@@ -51,6 +51,8 @@ Modify the file permissions to make the kubectl binary executable:
     sudo mv ./kubectl /usr/local/bin/kubectl
     sudo chown root: /usr/local/bin/kubectl
 
+4. **Verify kubectl installation:**
+
 To verify the installation, type:
 
     ```bash
